@@ -1,0 +1,5 @@
+GET http://localhost:3000/articles/food
+
+###
+
+GET http://localhost:3000/recipes/food/40

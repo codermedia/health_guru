@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  #logo {
+    font-family: "Dancing Script", cursive;
+    @apply text-2xl font-semibold text-[#0d9493];
+  }
+}
