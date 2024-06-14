@@ -19,7 +19,7 @@ const Articles = () => {
   let isHeadlinesRendered = useRef(false);
 
   const handleHeadlines = async () => {
-    await fetch("http://localhost:3000/articles/" + dt, {
+    await fetch("https://health-guru-server.vercel.app/articles/" + dt, {
       method: "GET",
       headers: {
         "Access-Control-Allow-Origin": "*",
