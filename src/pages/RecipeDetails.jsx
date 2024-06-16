@@ -24,7 +24,6 @@ const RecipeDetails = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setRecommended(data);
       })
       .catch((error) => console.log(error));
