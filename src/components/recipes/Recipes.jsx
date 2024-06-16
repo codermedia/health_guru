@@ -29,7 +29,7 @@ const Recipes = () => {
   };
 
   const handleRecipes = async () => {
-    await fetch("http://localhost:3000/recipes/" + dt + "/" + limit, {
+    await fetch("https://health-guru-server.vercel.app/recipes/" + dt + "/" + limit, {
       method: "GET",
       headers: {
         "Access-Control-Allow-Origin": "*",

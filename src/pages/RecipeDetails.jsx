@@ -15,7 +15,7 @@ const RecipeDetails = () => {
   const [isDataLoaded, setIsDataLoaded] = useState(null);
 
   const handleRecommended = async (label, limit) => {
-    await fetch("http://localhost:3000/recipes/" + label + "/" + limit, {
+    await fetch("https://health-guru-server.vercel.app/recipes/" + label + "/" + limit, {
       method: "GET",
       headers: {
         "Access-Control-Allow-Origin": "*",
