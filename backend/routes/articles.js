@@ -20,12 +20,7 @@ router.get("/:query", async (req, res) => {
   )
     .then((response) => response.json())
     .then((data) => {
-      const dt = data.articles.filter(
-        (item) =>
-          item.urlToImage !== null &&
-          item.description !== null &&
-          item.publishedAt !== null,
-      );
+      const dt = data.articles.filter((item) => item.urlToImage !== null);
       return res.json(dt);
     })
     .catch((error) => console.log(error));
