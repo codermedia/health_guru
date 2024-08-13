@@ -20,8 +20,8 @@ router.get("/:query", async (req, res) => {
   )
     .then((response) => response.json())
     .then((data) => {
-      const dt = data.articles.filter((item) => item.urlToImage !== null);
-      return res.json(dt);
+      // const dt = data.articles.filter((item) => item.urlToImage !== null);
+      return res.json(data);
     })
     .catch((error) => console.log(error));
 });

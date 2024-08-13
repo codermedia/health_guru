@@ -44,9 +44,9 @@ const Articles = () => {
 
         setIsLoading(false);
 
-        if (data?.length > 0) {
+        // if (data?.length > 0) {
           setIsDataLoaded(true);
-        }
+        // }
 
         return () => {
           clearTimeout(timer2);
